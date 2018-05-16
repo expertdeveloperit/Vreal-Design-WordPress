@@ -1,0 +1,124 @@
+.header{
+	position: fixed;
+	width: 100%;
+	background: #f00;
+	top: 0;
+	left: 0;
+	z-index: 9;
+	.navigation{
+		position: absolute;
+		top: 30px;
+		left: 30px;
+		.navigation__button{
+			width: 40px;
+			height: 40px;
+			border:2px solid $purple;
+			display: block;
+			cursor: pointer;
+			span{
+				display: block;
+				width: 27px;
+    		height: 3px;
+    		margin: 7px 5px 6px;
+				background: $purple;
+				&:last-child{
+					width: 37px;
+					height: 37px;
+					display: block;
+					margin: 0;
+					opacity: 0.5;
+					margin-top: -37px;
+				}
+			}
+		}
+		.navigation__dropdown{
+			position: absolute;
+			left: 40px;
+			top: 0;
+			width: 170px;
+			background: rgba(56,60,71,0.5);
+			padding: 5px 15px;
+			ul{
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				li{
+					display: block;
+					a{
+						display: block;
+						color: $white;
+						text-transform: uppercase;
+						font-size: 14px;
+						padding: 7px 0;
+						opacity: 0.8;
+						&:hover{
+							text-decoration: none;
+							opacity: 1;
+						}
+					}
+					&.divider{
+						border-bottom: 1px solid $white;
+						margin: 10px 0;
+					}
+				}
+			}
+		}
+	}
+	.social{
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		.social__button{
+			width: 40px;
+			height: 40px;
+			background: rgba(56,60,71,0.5);
+			border-radius: 0 3px 3px 0;
+			display: block;
+			cursor: pointer;
+			i{
+				color: $purple;
+				font-size: 34px;
+				margin: 3px 4px;
+			}
+		}
+		.social__dropdown{
+			position: absolute;
+			right: 40px;
+			top: 0;
+			width: 180px;
+			background: rgba(56,60,71,0.5);
+			border-radius: 3px 0 0 3px;
+			padding: 3px 3px 2px 0;
+			ul{
+				margin: 0;
+				padding: 0;
+				text-align: right;
+				li{
+					float: left;
+					margin: 0;
+					padding: 0;
+					overflow: hidden;
+					a{
+						width: 35px;
+						height: 35px;
+						display: block;
+						padding: 3px 4px;
+						i{
+							font-size: 32px;
+							margin: 0;
+							position: relative;
+    					top: -2px;
+						}
+						&.social__dropdown_icon{
+							background: #7687c3;
+							margin: 3px 3px 0;
+							border-radius: 5px;
+							width: 28px;
+    					height: 28px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
